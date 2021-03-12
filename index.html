@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Ceep</title>
+  <title>Notas usando o LocalStorage</title>
 </head>
 <body>
   <div class="app">
@@ -17,6 +17,7 @@
       
       <form class="form" action="">
         <input class="form-input" type="text" data-form-input>
+        <input type="datetime-local" placeholder="preencha ano-mes-dia" data-form-date>
         <button class="form-button" data-form-button> Novo Item </button>
       </form>
 
@@ -24,6 +25,7 @@
         
       </ul>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>
 </html>
